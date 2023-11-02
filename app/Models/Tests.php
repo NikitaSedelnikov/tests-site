@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Tests extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+      'title',
+      'description',
+      'questions_answers',
+      'right_answers',
+      'results',
+    ];
+    public $timestamps = false;
+}
